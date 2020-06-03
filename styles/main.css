@@ -39,8 +39,8 @@ posicionamento, alinhamentos
     height: 100vh;
 
     background: url('../assets/home-background.svg') no-repeat;
-    background-position: 35vw 20vh;
-    background-size: auto 600px;
+    background-position: 85% bottom;
+    background-size: 80vh auto;
 }
 
 #page-home .content {
@@ -153,11 +153,15 @@ posicionamento, alinhamentos
     text-align: center;
 }
 
+@media only screen and (max-width: 1250px) {
+  #page-home {
+      background-position: 40vw bottom;
+  }
+}
 
-
-@media (max-width: 900px) {
+@media only screen and  (max-width: 900px) {
     #page-home {
-        background-position-x: 70vw;
+        background-position-x: 80vw;
     }
     
     #page-home .content {
@@ -167,7 +171,9 @@ posicionamento, alinhamentos
     
     #page-home header a {
         position: absolute;
-        bottom: 48px;
+        bottom: 18px;
+        justify-content: center;
+        width: 100vw;
         
         left: 50%;
         transform: translateX(-50%);
@@ -175,12 +181,5 @@ posicionamento, alinhamentos
 
     #page-home main {
         align-items: center;
-    }
-    
-    @media (min-width: 1025px) {
-        #page-home {
-            background-size: auto 450px;
-            background-position: 45vw 25vh;
-        }
-    }
+    }   
 }
