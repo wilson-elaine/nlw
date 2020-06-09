@@ -52,6 +52,8 @@ for (const item of itemstoCollect) {
     item.addEventListener("click", handleSectedItem)
 }
 
+const collectedItems = document.querySelector("input[name=items")
+
 let selectdItems = []
 
 function handleSectedItem(event) {
@@ -88,6 +90,6 @@ function handleSectedItem(event) {
     console.log(selectdItems)
 
     // atualizar o campo escondido com os dados selecionados
-    document.querySelector("input[name=items")
+    collectedItems.value = selectdItems
 
 }

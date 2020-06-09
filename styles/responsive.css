@@ -1,24 +1,33 @@
-@media only screen and  (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     #page-home {
         background-position-x: 70vw;
     }
-    
     #page-home .content {
         align-items: center;
         text-align: center;
     }
-      
     #page-home header a {
         position: absolute;
         bottom: 48px;
-        
         left: 50%;
         transform: translateX(-50%);
     }
-  
     #page-home main {
         align-items: center;
-    }   
+    }
+    #page-search-results .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    #page-search-results .card {
+        grid-template-columns: 1fr;
+    }
+    #page-search-results .card {
+        grid-template-columns: 1fr;
+    }
+    #page-search-results .card img {
+        height: 250px;
+    }
 }
 
 @media (min-width: 1700px) {
